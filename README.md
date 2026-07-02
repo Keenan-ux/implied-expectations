@@ -1,5 +1,8 @@
 # implied-expectations
 
+[![tests](https://github.com/Keenan-ux/implied-expectations/actions/workflows/ci.yml/badge.svg)](https://github.com/Keenan-ux/implied-expectations/actions/workflows/ci.yml)
+[![license](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 Every stock price is a forecast. This tool reads the forecast back to you.
 
 Give it a ticker and today's price. It pulls the company's numbers from SEC
