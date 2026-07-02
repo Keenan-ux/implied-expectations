@@ -1,6 +1,7 @@
 # implied-expectations
 
 [![tests](https://github.com/Keenan-ux/implied-expectations/actions/workflows/ci.yml/badge.svg)](https://github.com/Keenan-ux/implied-expectations/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/implied-expectations.svg)](https://pypi.org/project/implied-expectations/)
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 Every stock price is a forecast. This tool reads the forecast back to you.
@@ -15,7 +16,7 @@ rating. It is the bet the price implies, stated plainly, so you can judge
 whether the bet is sane.
 
 ```
-pip install git+https://github.com/Keenan-ux/implied-expectations
+pip install implied-expectations
 ```
 
 ## Sixty seconds to a first read
