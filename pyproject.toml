@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "implied-expectations"
+version = "0.1.0"
+description = "Invert a stock price into the bet it implies: the growth, duration, and margin a price assumes, via a textbook expectations-investing reverse DCF over SEC EDGAR filings."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Keenan-ux" }]
+keywords = ["finance", "valuation", "reverse-dcf", "expectations-investing", "sec-edgar"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Programming Language :: Python :: 3",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = ["httpx>=0.24"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.4"]
+
+[project.scripts]
+implied-expectations = "implied_expectations.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Keenan-ux/implied-expectations"
+Issues = "https://github.com/Keenan-ux/implied-expectations/issues"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
